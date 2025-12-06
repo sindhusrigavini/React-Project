@@ -1,0 +1,380 @@
+/* --------------------------------------------------
+   Base Styles
+-------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #f4f6ff;
+}
+
+/* --------------------------------------------------
+   Main Wrapper
+-------------------------------------------------- */
+#landing-wrapper {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #f9faff, #e5e9ff);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* --------------------------------------------------
+   Navbar
+-------------------------------------------------- */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 10px 25px;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #1976d2 !important;
+}
+
+.nav-link {
+  padding: 8px 18px !important;
+  color: #333 !important;
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1976d2 !important;
+}
+
+/* --------------------------------------------------
+   Beautiful Shop Dropdown
+-------------------------------------------------- */
+
+.navbar .dropdown-menu {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  padding: 12px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(200, 200, 200, 0.35);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  animation: dropdownSlide 0.22s ease-out;
+  min-width: 180px;
+}
+
+.navbar .dropdown-item {
+  padding: 10px 14px;
+  margin: 4px 6px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.25s ease;
+}
+
+.navbar .dropdown-item:hover {
+  background: #e8f1ff;
+  color: #1976d2;
+  transform: translateX(5px);
+}
+
+@keyframes dropdownSlide {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dropdown arrow color */
+.navbar .dropdown-toggle::after {
+  border-top-color: #1976d2 !important;
+}
+
+/* --------------------------------------------------
+   Hero Section
+-------------------------------------------------- */
+#landing-box {
+  height: calc(100vh - 70px);
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#landing-title {
+  font-size: 4rem;
+  color: #1976d2;
+  font-weight: 700;
+}
+
+#landing-subtitle {
+  font-size: 1.7rem;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+#landing-text {
+  max-width: 600px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+#landing-btn {
+  padding: 14px 34px;
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------
+   Contact Info Under Get Started
+-------------------------------------------------- */
+#contact-info {
+  margin-top: 25px;
+  text-align: center;
+  color: #444;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+#contact-info p {
+  margin: 4px 0;
+}
+
+#contact-info strong {
+  color: #1976d2;
+}
+
+/* --------------------------------------------------
+   BEAUTIFUL MODERN LOGIN POPUP
+-------------------------------------------------- */
+
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.25s ease;
+}
+
+.login-box.pretty {
+  width: 380px;
+  padding: 38px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.22);
+  position: relative;
+  animation: scaleUp 0.3s ease;
+}
+
+.pretty-close {
+  position: absolute;
+  right: 18px;
+  top: 14px;
+  font-size: 28px;
+  color: #444;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: 0.2s ease;
+}
+
+.pretty-close:hover {
+  color: #000;
+  transform: scale(1.15);
+}
+
+.pretty-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1976D2;
+  margin-bottom: 4px;
+}
+
+.pretty-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.pretty-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.pretty-input-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+.pretty-input-group input {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d5d7dd;
+  font-size: 15px;
+  background: #f8faff;
+  transition: 0.25s ease;
+}
+
+.pretty-input-group input:focus {
+  border-color: #1976D2;
+  box-shadow: 0 0 0 2px rgba(25,118,210,0.15);
+  outline: none;
+}
+
+.pretty-login-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #1976D2;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 15px rgba(25,118,210,0.35);
+}
+
+.pretty-login-btn:hover {
+  background: #1059a5;
+}
+
+.pretty-footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+
+.pretty-footer span {
+  color: #1976D2;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pretty-footer span:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------
+   Login Animations
+-------------------------------------------------- */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* --------------------------------------------------
+   AI Assistant
+-------------------------------------------------- */
+
+.ai-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.ai-box {
+  width: 420px;
+  height: 540px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ai-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px;
+  border-bottom: 1px solid #f0f2f7;
+}
+
+.ai-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f7f9ff;
+}
+
+.message {
+  max-width: 85%;
+}
+
+.message.user .message-text {
+  background: #1976d2;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  align-self: flex-end;
+}
+
+.message.bot .message-text {
+  background: #eaf3ff;
+  color: #222;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ai-input-row {
+  border-top: 1px solid #ddd;
+  padding: 12px;
+  display: flex;
+  gap: 8px;
+}
+
+.ai-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.ai-send {
+  padding: 10px 14px;
+  background: #1976d2;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
