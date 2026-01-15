@@ -1,37 +1,8 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Landing from "./components/Landing";
-// import Chatbot from "./components/Chatbot";
-// import Home from "./components/Home";
-
-
-// export default function App() {
-//   return (
-//     <BrowserRouter>
-//       <Routes>
-//         <Route
-//           path="/"
-//           element={
-//             <>
-//               <Landing />
-//               <Chatbot />
-              
-//             </>
-//           }
-//         />
-
-//         {/* ✅ HOME PAGE AFTER LOGIN */}
-//         <Route path="/home" element={<Home />} />
-//       </Routes>
-//     </BrowserRouter>
-//   );
-// }
-
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./components/Landing";
+import Landing from "./components/landing";
 import Chatbot from "./components/Chatbot";
 import Home from "./components/Home";
-import WishlistPage from "./components/WishlistPage";
+import WishlistPage from "./components/wishlistPage";
 import Activity from "./components/Activity";        // ✅ ADD
 import Inspiration from "./components/Inspiration";  // ✅ ADD
 
