@@ -1,0 +1,327 @@
+/* ================= HERO ================= */
+.wishwell-hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #28c1e8, #1aa7d9);
+  display: flex;
+  align-items: center;
+  padding: 72px 90px 0;
+  color: white;
+  overflow: hidden;
+}
+
+.wishwell-hero-left {
+  flex: 1;
+}
+
+.wishwell-tag {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.wishwell-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin: 18px 0;
+}
+
+.wishwell-desc {
+  font-size: 1.15rem;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.wishwell-btn {
+  background: black;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.wishwell-hero-right {
+  flex: 1;
+  position: relative;
+}
+
+.wishwell-phones {
+  width: 620px;
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ================= PAGE 2 ================= */
+.wishwell-page2 {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.wishwell-page2 img {
+  width: 100%;
+}
+
+/* ================= PAGE 3 ================= */
+.wishwell-page3 {
+  padding: 110px 0 40px;
+}
+
+.wishwell-page3-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 90px;
+  align-items: center;
+}
+
+.wishwell-page3-left h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.wishwell-page3-left p {
+  margin-bottom: 32px;
+  color: #555;
+}
+
+.wishwell-page3-btn {
+  background: linear-gradient(135deg, #28c1e8, #1aa7d9);
+  color: white;
+  padding: 14px 36px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.wishwell-page3-right {
+  display: flex;
+  gap: 70px;
+}
+
+.wishwell-stat-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #28c1e8;
+}
+
+.wishwell-stat-label {
+  color: #555;
+}
+
+/* ================= PAGE 4 ================= */
+.wishwell-page4 {
+  background: #f5f7fb;
+  padding: 80px 0 120px;
+}
+
+.page4title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.wishwell-page4-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.wishwell-page4-phone {
+  width: 320px;
+}
+
+.wishwell-page4-right h3 {
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.wishwell-page4-right p {
+  color: #555;
+}
+
+/* ================= PAGE 5 ================= */
+.wishwell-page5 {
+  padding: 140px 0;
+}
+
+.wishwell-page5-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+  align-items: center;
+}
+
+.wishwell-page5-left h2 {
+  font-size: 2.6rem;
+  margin-bottom: 22px;
+}
+
+.wishwell-page5-left p {
+  color: #555;
+  max-width: 520px;
+}
+
+.wishwell-page5-phone {
+  width: 300px;
+}
+
+/* ================= PAGE 6 ================= */
+.wishwell-page6 {
+  padding: 140px 0;
+}
+
+.wishwell-page6-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+  align-items: center;
+}
+
+.wishwell-page6-phone {
+  width: 300px;
+}
+
+.wishwell-page6-right h2 {
+  font-size: 2.6rem;
+  margin-bottom: 22px;
+}
+
+.wishwell-page6-right p {
+  color: #555;
+  max-width: 520px;
+}
+
+/* ================= PAGE 7 ================= */
+.wishwell-page7 {
+  padding: 140px 0;
+}
+
+.wishwell-page7-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 140px;
+  align-items: center;
+}
+
+.wishwell-page7-btn {
+  background: linear-gradient(135deg, #28c1e8, #1aa7d9);
+  color: white;
+  padding: 14px 36px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.wishwell-footer {
+  background: linear-gradient(135deg, #28c1e8, #1aa7d9);
+  padding: 90px 0 60px;
+  color: white;
+  
+}
+
+.wishwell-footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 80px;
+  align-items: center;
+}
+
+.wishwell-footer-icon {
+  width:250px;
+  height: 155px;
+}
+
+.wishwell-footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.wishwell-footer-buttons img {
+  width: 150px;
+  margin-bottom: 12px;
+}
+
+.wishwell-footer-phones img {
+  width: 220px;
+}
+
+/* ================= CHAT BULB ================= */
+.ai-bulb {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #1aa7d9;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+/* =====================================================
+   GLOBAL SAFETY
+===================================================== */
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =====================================================
+   TABLETS (≤1024px)
+===================================================== */
+@media (max-width: 1024px) {
+  /* HERO */
+  .wishwell-hero {
+    padding: 100px 40px 60px;
+    height: auto;
+  }
+
+  .wishwell-title {
+    font-size: 3rem;
+  }
+
+  .wishwell-phones {
+    width: 460px;
+    right: -40px;
+  }
+
+  /* PAGE 3 */
+  .wishwell-page3-container {
+    gap: 60px;
+  }
+
+  /* PAGE 4–7 */
+  .wishwell-page4-container,
+  .wishwell-page5-container,
+  .wishwell-page6-container,
+  .wishwell-page7-container {
+    gap: 80px;
+  }
+
+  /* FOOTER */
+  .wishwell-footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}

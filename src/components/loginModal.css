@@ -1,0 +1,166 @@
+/* OVERLAY */
+.login-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+/* MODAL */
+.login-modal {
+  width: 420px;
+  max-width: 92%;
+  background: #fff;
+  border-radius: 18px;
+  padding: 36px 32px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeInScale 0.25s ease;
+}
+
+/* ANIMATION */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* CLOSE ICON */
+.login-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #777;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.login-close:hover {
+  color: #000;
+}
+
+/* LOGO */
+.login-logo {
+  height: 48px;
+  margin-bottom: 14px;
+}
+
+/* TEXT */
+.login-modal h2 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.login-sub {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 22px;
+}
+
+/* INPUTS */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-bottom: 12px;
+  transition: border 0.2s ease;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #1aa7d9;
+}
+
+/* BUTTON BASE */
+.login-btn {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.login-btn:active {
+  transform: scale(0.98);
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* BUTTON ICON */
+.login-btn img {
+  width: 18px;
+}
+
+/* BUTTON VARIANTS */
+.login-btn.black {
+  background: #000;
+  color: #fff;
+}
+
+.login-btn.facebook {
+  background: #1877f2;
+  color: #fff;
+}
+
+.login-btn.white {
+  background: #fff;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.login-btn.apple {
+  background: #000;
+  color: #fff;
+}
+
+.login-btn.email {
+  background: linear-gradient(135deg, #2bb3e6, #1aa7d9);
+  color: #fff;
+}
+
+/* OR TEXT */
+.login-or {
+  font-size: 13px;
+  color: #aaa;
+  margin: 12px 0;
+}
+
+/* TERMS */
+.signup-terms {
+  font-size: 11px;
+  color: #8a8a8a;
+  margin-top: 14px;
+  line-height: 1.4;
+}
+
+.signup-terms span {
+  color: #1aa7d9;
+  cursor: pointer;
+}
+

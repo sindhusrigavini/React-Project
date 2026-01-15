@@ -1,0 +1,237 @@
+/* ================= NAVBAR ================= */
+.home-navbar {
+  height: 70px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.home-logo {
+  height: 40px;
+}
+
+.home-navbar-center {
+  display: flex;
+  gap: 40px;
+  font-weight: 500;
+}
+
+.home-navbar-center span {
+  cursor: pointer;
+}
+
+.home-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.add-wish-btn {
+  background: linear-gradient(135deg, #28c1e8, #1aa7d9);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-circle {
+  width: 34px;
+  height: 34px;
+  background: #1aa7d9;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+/* ================= ABOUT PAGE ================= */
+.about-page {
+  background: #f4f6ff;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+}
+
+.about-header h1 {
+  font-size: 42px;
+  margin-bottom: 6px;
+}
+
+.about-intro {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  margin-bottom: 48px;
+}
+
+.about-section h2 {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.about-section h3 {
+  font-size: 18px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+.about-section p {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #1aa7d9;
+}
+
+.disclosures {
+  border-top: 1px solid #ddd;
+  padding-top: 32px;
+}
+
+/* ================= FOOTER ================= */
+.home-footer {
+  background: linear-gradient(135deg, #28c1e8, #1aa7d9);
+  color: white;
+  padding: 80px 0 30px;
+}
+
+.home-footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 80px;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 220px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 80px;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.footer-buttons img {
+  width: 150px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.footer-phone img {
+  width: 220px;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+.profile-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1aa7d9;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-circle.big {
+  width: 48px;
+  height: 48px;
+  font-size: 18px;
+}
+
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 3000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+.profile-panel {
+  width: 320px;
+  background: #fff;
+  padding: 20px;
+  height: 100%;
+  animation: slideIn 0.25s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.profile-user {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.profile-name {
+  font-weight: 600;
+}
+
+.profile-email {
+  font-size: 13px;
+  color: #666;
+}
+
+.logout-btn {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
